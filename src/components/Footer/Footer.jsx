@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="mt-10">
       <footer className="footer footer-horizontal footer-center bg-[#59C6D2] text-primary-black p-10">
         <aside>
           <img src="../../../Resources/book.ico" alt="book img" />

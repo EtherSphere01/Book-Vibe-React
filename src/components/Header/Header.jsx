@@ -15,8 +15,8 @@ const Header = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="content-text">
+      <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -53,7 +53,9 @@ const Header = () => {
         </div>
         <div className="navbar-end gap-4 ">
           <a className="btn bg-[#23BE0A] text-white">Sign In</a>
-          <a className="btn bg-[#59C6D2] text-white hidden lg:block text-center pt-2">Sign Up</a>
+          <a className="btn bg-[#59C6D2] text-white hidden lg:block text-center pt-2">
+            Sign Up
+          </a>
         </div>
       </div>
     </div>
