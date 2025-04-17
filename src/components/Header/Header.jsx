@@ -7,7 +7,10 @@ const Header = () => {
         <a>Home</a>
       </li>
       <li>
-        <a>About us</a>
+        <a>Listed Books</a>
+      </li>
+      <li>
+        <a>Pages to Read</a>
       </li>
     </>
   );
@@ -38,15 +41,19 @@ const Header = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {links}
+              <li>
+                <a className="btn bg-[#59C6D2] text-white lg:hidden">Sign Up</a>
+              </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Boi Poka</a>
+          <a className="btn btn-ghost text-xl">Book Vibe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end gap-4 ">
+          <a className="btn bg-[#23BE0A] text-white">Sign In</a>
+          <a className="btn bg-[#59C6D2] text-white hidden lg:block text-center pt-2">Sign Up</a>
         </div>
       </div>
     </div>

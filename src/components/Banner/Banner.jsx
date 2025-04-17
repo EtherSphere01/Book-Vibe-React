@@ -3,11 +3,11 @@ import React from "react";
 const Banner = () => {
   return (
     <div>
-      <div className="hero bg-base-200 min-h-[554px]">
+      <div className="hero bg-base-200 min-h-[554px] my-10 rounded-2xl">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl"
+            src="../../../Resources/pngwing 1.png"
+            className="max-w-sm rounded-lg"
           />
           <div>
             <h1 className="text-5xl font-bold">
