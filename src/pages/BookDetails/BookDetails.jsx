@@ -70,8 +70,8 @@ const BookDetails = () => {
             </p>
           </div>
           <div className="card-actions justify-start">
-            <button className="btn btn-primary">Read</button>
-            <button className="btn btn-primary">Wishlist</button>
+            <button className="btn border-gray-400">Read</button>
+            <button className="btn bg-[#50B1C9] text-white">Wishlist</button>
           </div>
         </div>
       </div>
