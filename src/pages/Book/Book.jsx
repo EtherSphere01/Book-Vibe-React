@@ -45,7 +45,7 @@ const Book = ({ book }) => {
             <p className="content-text">
               <span className="">By:</span> {author}
             </p>
-            <div className="border-b-2 border-dashed opacity-10 pt-2 mb-2"></div>
+            <div className="border-b-2 border-dashed opacity-15 pt-2 mb-2"></div>
 
             <div className="font-light flex justify-between ">
               <div>{category}</div>

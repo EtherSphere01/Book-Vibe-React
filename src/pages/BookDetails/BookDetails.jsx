@@ -1,5 +1,8 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
+import { addToDB, removeFromDB } from "../../utility/addtoDB";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -20,6 +23,24 @@ const BookDetails = () => {
     category,
     yearOfPublishing,
   } = bookDetails;
+
+  const handleWishlist = (id) => {
+    const storeBook = addToDB(id, "wishList");
+    if (storeBook) {
+      toast.success("Added to Wishlist");
+    } else {
+      toast.info("Already in Wishlist");
+    }
+  };
+
+  const handleRead = (id) => {
+    const remove = removeFromDB(id);
+    if (remove) {
+      toast.success("Marked as Read");
+    } else {
+      toast.error("Already Marked as Read");
+    }
+  };
   return (
     <div className="my-10">
       <div className="flex flex-col lg:flex-row gap-10 ">
@@ -72,11 +93,33 @@ const BookDetails = () => {
             </p>
           </div>
           <div className="card-actions justify-start">
-            <button className="btn border-gray-400">Read</button>
-            <button className="btn bg-[#50B1C9] text-white">Wishlist</button>
+            <button
+              onClick={() => handleRead(bookId)}
+              className="btn border-gray-400"
+            >
+              Mark as Read
+            </button>
+            <button
+              onClick={() => handleWishlist(bookId)}
+              className="btn bg-[#50B1C9] text-white"
+            >
+              Add to Wishlist
+            </button>
           </div>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 };
