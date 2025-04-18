@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router";
 import { getStoredBook } from "../../utility/addtoDB";
 import CommonBook from "../CommonBook/CommonBook";
 
-const ReadList = ({ books }) => {
+const WishList = ({ books }) => {
   const [filter, setFilter] = useState([]);
 
   useEffect(() => {
-    const storeBooks = getStoredBook("readList");
+    const storeBooks = getStoredBook("wishList");
     const newList = storeBooks.map((id) => parseInt(id));
 
     const filteredBooks = books.filter((book) => newList.includes(book.bookId));
@@ -24,4 +23,4 @@ const ReadList = ({ books }) => {
   );
 };
 
-export default ReadList;
+export default WishList;
