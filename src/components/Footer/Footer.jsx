@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="mt-10">
       <footer className="footer footer-horizontal footer-center bg-[#59C6D2] text-primary-black p-10">
         <aside>
-          <img src="../../../Resources/book.ico" alt="book img" />
+          <img src="/data/book.ico" alt="book img" />
           <p className="font-bold">
             Book Vibe Industries Ltd.
             <br />
