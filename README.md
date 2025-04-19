@@ -3,9 +3,9 @@
 Live Link: [Book Vibe Live Demo](https://book-vibe-react25.netlify.app/)
 
 
-"./Resources/Landing%20Page%20Design.jpg"
-"./Resources/Filter Page.jpg"
-"./Resources/Book Details.jpg"
+![Landing Page Design](./Resources/Landing%20Page%20Design.jpg)
+![Filter Page](./Resources/Filter%20Page.jpg)
+![Book Details](./Resources/Book%20Details.jpg)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
